@@ -1,0 +1,96 @@
+---
+# Edit by: Anhkhoaaa
+# Link YT: https://www.youtube.com/channel/UC5jLjkP1tDAfmjWYhsxg0-g
+#
+# KHÔNG ĐƯỢC THAY ĐỔI DÒNG LỆNH NÀY!
+scorehud-version: 2
+
+titles:
+  # Set thành *true*, sẽ kích hoạt "titles.lines". Nó giúp bạn chuyển đổi tiêu đề.
+  # Set thành *false*, sẽ kích hoạt "titles.title". Tức là chỉ để 1 tiêu đề cố định.
+  flicker: false
+
+  # Nếu *flicker* là *true*, nó sẽ set thời gian để thay đổi tiêu đề
+  period: 5 # giây
+    # Sau ^ giây, plugin sẽ thay đổi tiêu đề 
+
+  # Tiêu đề cố định
+  title: "§l§aServer §dName"
+
+  # Tiêu đề thay đổi theo thời gian.
+  lines:
+  - "§l§aServer §dName"
+  - "§l§bServer §cName"
+  - "§l§cServer §bName"
+  - "§l§dServer §aName"
+
+# Bảng thông tin cơ bản. Bạn có thể thay đổi giá trị tại đây.
+######################################
+#          BASIS
+# {basicscore.x} -> Tọa độ X
+# {basicscore.y} -> Tọa độ Y
+# {basicscore.z} -> Tọa độ Z
+# {basicscore.name} -> Tên người chơi
+# {basicscore.online} -> Người chơi đang onl
+# {basicscore.max_online} -> Tổng số lượng player có thể vào server
+# {basicscore.item_name} -> Item cầm trên tay player.
+# {basicscore.item_id} -> Id của item
+# {basicscore.item_meta} -> Meta của item
+# {basicscore.item_count} -> Số lượng ủa item
+# {basicscore.tps} -> Hiện tps
+# {basicscore.ip} -> ip của player
+# {basicscore.ping} -> Hiện ping
+# {basicscore.world_name} -> tên của thế giới player đang đứng
+# {basicscore.time} -> Thời gian
+# {basicscore.date} -> Ngày-Tháng-Năm
+# {world_player_count} -> số lượng người chơi ở thế giới đang đứng
+# {memory_main_thread} -> Ram đang sử dụng
+# {memory_total} -> Tổng ram của server.
+#####################################
+
+#####################################
+#          POINTAPI(BY NCD)
+# {pointapiscore.point} -> Số point của người chơi
+#
+# link YT: https://www.youtube.com/channel/UCy-AzDmA9vTNFfBo2fDzuaw
+#
+#####################################
+
+#####################################
+#          PUREPERMS
+# {ppscore.rank} -> rank hiện tại của player
+# {ppscore.prefix} -> hiện prefix
+# {ppscore.suffix} -> hiện suffix
+#####################################
+
+
+# Bảng thông tin cơ bản. bạn có thể config tại đây.
+default-board:
+- ""
+- "§dName: §5{basicscore.name}"
+- ""
+- "§bOnline: §a{basicscore.online} §c/ §d{basicscore.max_online}"
+- ""
+- "§6Hãy like và đăng ký kênh"
+- "Edit by Anhkhoaaa"
+
+# Nếu bạn muốn hiển thị cho mỗi thế giới khác nhau một bảng thông tin
+# Hãy set 'multi-world.active' tại "config.yml" thành *true*
+scoreboards:
+# VD: 
+# ------------------
+# "world name":    | Tên của thế giới. Xem tại folder "worlds".
+#   lines:         | * QUAN TRỌNG: BẮT BUỘC PHẢI CÓ DÒNG NÀY!
+#   - "Line #1"    | * Thông tin bạn tự config.
+#   - "Line #2"    | * Thông tin bạn tự config 2.
+#------------------- * TỐI ĐA 15 DÒNG.
+  "world":
+    lines:
+    - "§dName: §5{basicscore.name}"
+    - "§bOnline: §a{basicscore.online} §c/ §d{basicscore.max_online}"
+  "world 2":
+    lines:
+    - "§dName: §5{basicscore.name}"
+    - "§dTPS: §5{basicscore.tps}"
+    - "§bLoad: §a{basicscore.load}"
+...

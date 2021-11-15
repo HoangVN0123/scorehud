@@ -1,0 +1,19 @@
+name: ScoreHud
+main: Ifera\ScoreHud\ScoreHud
+api: 3.0.0
+version: 6.3.0
+author: Ifera
+description: Add fully customizable scoreboards to your server.
+
+extensions:
+  Core: '>=7.4'
+
+virions:
+- ScoreFactory
+- UpdateNotifier
+- ConfigUpdater
+
+permissions:
+  sh.command.sh:
+    default: true
+    description: Allow players to use /scorehud command.

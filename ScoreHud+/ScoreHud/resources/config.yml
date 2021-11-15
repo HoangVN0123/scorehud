@@ -1,0 +1,56 @@
+---
+#   _____                    _   _           _
+#  /  ___|                  | | | |         | |
+#  \ `--.  ___ ___  _ __ ___| |_| |_   _  __| |
+#   `--. \/ __/ _ \| '__/ _ \  _  | | | |/ _` |
+#  /\__/ / (_| (_) | | |  __/ | | | |_| | (_| |
+#  \____/ \___\___/|_|  \___\_| |_/\__,_|\__,_|
+#
+# ScoreHud, a Scoreboard plugin for PocketMine-MP
+# Copyright (c) 2020 Ifera  < https://github.com/Ifera >
+# Discord: Ifera#3717
+# Twitter: ifera_tr
+# <https://opensource.org/licenses/GPL-3.0>.
+#  -----------------------------------------------------------------------
+
+
+# KHÔNG ĐƯỢC THAY ĐỔI DÒNG LỆNH NÀY!
+config-version: 10 ##
+######################
+multi-world:
+  # NẾU MUỐN MỘT THẾ GIỚI 1 BẢNH THÔNG TIN KHÁC NHAU. HÃY KÍCH HOẠT THÀNH TRUE.
+  # CHỈNH SỬA TẠI scorehud.yml
+  active: false
+  # CHỈNH THÀNH TRUE ĐỂ HIỂN THỊ 1 BẢNG THÔNG TIN CHÍNH TOÀN BỘ CÁC WORLD.
+  use-default: false
+# CÁC WORLD SẼ KHÔNG ĐƯỢC HIỆN BẢNG THÔNG TIN NẾU CÓ TRONG DANH SÁCH NÀY.
+# NẾU MUỐN ĐỄ TRỐNG, HÃY CHỈNH SỬA THÀNH:
+# disabled-worlds: []
+disabled-worlds:
+- "world 1"
+- "world 2"
+
+# Change how time is displayed on your server.
+time:
+  # ĐÃ SET SẴN CHO BẠN :>
+  zone: "Asia/Ho_Chi_Minh"
+
+  format:
+    # Sử dụng {scorehudx.time} để hiển thị.
+    #
+    # H - Giờ
+    # i - Phút
+    # s - Giây
+    #
+    time: "H:i:s"
+
+    # Sủ dụng {scorehudx.date} để hiển thị.
+    #
+    # d - Ngày (01-31)
+    # m - Tháng (01-12)
+    # Y - Năm (yyyy)
+    #
+    # Tìm hiểu thêm tại đây:
+    # http://php.net/manual/function.date.php
+    date: "d-m-Y"
+...
